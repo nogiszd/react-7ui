@@ -1,0 +1,60 @@
+{
+  "name": "react-7ui",
+  "version": "0.1.0",
+  "description": "Windows 7 UI Library based on 7.css",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "docs": "typedoc",
+    "docs:watch": "typedoc --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^9.0.18",
+    "@storybook/addon-onboarding": "^9.0.18",
+    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
+    "@storybook/react-webpack5": "^9.0.18",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "storybook": "^9.0.18",
+    "tsup": "^8.5.0",
+    "typedoc": "^0.28.8",
+    "typedoc-plugin-markdown": "^4.8.0",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "windows7",
+    "aero-ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "sideEffects": false,
+  "dependencies": {
+    "7.css": "^0.21.1"
+  }
+}
