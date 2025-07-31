@@ -1,8 +1,12 @@
 # React-7UI
 
-React library made with [7.css](https://github.com/khang-nd/7.css/) library - recreating that Windows 7 Aero Look 🪟
+React library made on top of [7.css](https://github.com/khang-nd/7.css/) package.
+
+> Recreating that Windows 7 Aero Look 🪟✨
 
 ## 📦 Installation & Usage
+
+> _Available soon._
 
 ```bash
 npm install react-7ui

@@ -2,6 +2,14 @@
   "name": "react-7ui",
   "version": "0.1.0",
   "description": "Windows 7 UI Library based on 7.css",
+  "author": "nogiszd",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "ui",
+    "windows7",
+    "aero-ui"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -15,10 +23,15 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepare": "husky",
     "clean": "rm -rf dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -37,6 +50,12 @@
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-prettier": "^5.5.3",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "storybook": "^9.0.18",
@@ -45,16 +64,12 @@
     "typedoc-plugin-markdown": "^4.8.0",
     "typescript": "^5.8.3"
   },
-  "keywords": [
-    "react",
-    "ui",
-    "windows7",
-    "aero-ui"
-  ],
-  "author": "",
-  "license": "MIT",
-  "sideEffects": false,
   "dependencies": {
     "7.css": "^0.21.1"
+  },
+  "sideEffects": false,
+  "repository": {
+    "url": "https://github.com/nogiszd/react-7ui",
+    "type": "github"
   }
 }
